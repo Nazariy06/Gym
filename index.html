@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gladiator Gym</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="img/gladiator-logo.png" alt="Логотип Gladiator Gym">
+      <h1>Gladiator Gym</h1>
+    </div>
+    <nav>
+      <a href="#home">Головна</a>
+      <a href="#gallery">Галерея</a>
+      <a href="services.html">Послуги</a>
+      <a href="pricing.html">Абонементи</a>
+      <a href="#about">Про нас</a>
+      <a href="#contact">Контакти</a>
+    </nav>
+  </header>
+  <main>
+    <section id="home">
+      <h2>Ласкаво просимо до Gladiator Gym</h2>
+      <p>Кращий зал твого району. Стань сильнішим уже сьогодні!</p>
+      <div class="main-foto">
+        <img src="img/g-ph.jpg" alt="Фото залу">
+      </div>
+    </section>
+    <section id="gallery">
+      <h2>Галерея</h2>
+      <div class="slider-container">
+        <button id="prev" class="arrow-button">❮</button>
+        <div class="circle-frame">
+          <img id="slider-image" src="img/g-ph.jpg" alt="Фото 1">
+        </div>
+        <button id="next" class="arrow-button">❯</button>
+      </div>
+    </section>
+    <section id="about">
+      <h2>Про нас</h2>
+      <p>Gladiator Gym — це місце, де ви знайдете силу, мотивацію та підтримку. Ми працюємо з 2015 року, і вже маємо сотні задоволених клієнтів.</p>
+    </section>
+    <section id="contact">
+      <h2>Контакти</h2>
+      <p>Адреса: вул. Садова, 2/1, Хмельницький, Хмельницька область, 29027</p>
+      <p>Телефон: +38 097 776 0954</p>
+      <form id="contactForm">
+        <label for="name">Ім'я:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="message">Повідомлення:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br>
+        <button type="submit">Надіслати</button>
+      </form>
+      <section id="map">
+        <div id="map" style="width:100%; height:300px; background:#ccc; margin-top:15px;">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4361.7222472951935!2d27.00405830170743!3d49.45625031530028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4732076e1f658b9d%3A0xc664546bd728346d!2zSG9tZSBHeW0g0KLRgNC10L3QsNC20LXRgNC90LjQuSDQt9Cw0Ls!5e0!3m2!1sru!2sua!4v1744102477898!5m2!1sru!2sua" 
+            width="100%" 
+            height="300" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </section>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 Gladiator Gym. Всі права захищено.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
