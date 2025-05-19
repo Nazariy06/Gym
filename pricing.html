@@ -4,8 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gladiator Gym</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,25 +14,28 @@
             <h1>Gladiator Gym</h1>
         </div>
         <nav>
-            <a href="index.html">Головна</a>
-            <a href="services.html">Послуги</a>
-            <a href="pricing.html">Абонементи</a>
+            <button onclick="location.href='index.html'">Головна</button>
+            <button onclick="location.href='services.html'">Послуги</button>
+            <button onclick="location.href='pricing.html'">Абонементи</button>
+            <button id="theme-toggle" class="theme-toggle">🌙</button>
         </nav>
     </header>
     <main>
         <section id="pricing">
             <h2>Абонементи</h2>
             <ul>
-              <li> 1 тренування — 80 грн</li>
-              <li> 8 тренувань (1 місяць) — 470 грн</li>
-              <li> 12 тренувань (1 місяць) — 500 грн</li>
-              <li> Безлім (1 місяць) — 530 грн</li>
+                <li> 1 тренування — 80 грн</li>
+                <li> 8 тренувань (1 місяць) — 470 грн</li>
+                <li> 12 тренувань (1 місяць) — 500 грн</li>
+                <li> Безлім (1 місяць) — 530 грн</li>
             </ul>
-          </section>
+        </section>
     </main>
-    <footer>
-        <p>© 2025 Gladiator Gym. Всі права захищено.</p>
-    </footer>
+    <div class="wrapper"></div>
+        <footer>
+            <p>© 2025 Gladiator Gym. Всі права захищено.</p>
+        </footer>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

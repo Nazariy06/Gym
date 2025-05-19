@@ -1,3 +1,4 @@
+// Слайдер
 const images = ['img/g-ph1.jpg', 'img/g-ph2.jpg', 'img/g-ph3.jpg', 'img/g-ph4.jpg', 'img/g-ph5.jpg', 'img/g-ph6.jpg'];
 let current = 0;
 
@@ -25,7 +26,7 @@ document.getElementById('prev').addEventListener('click', () => {
   changeImage(nextIndex);
 });
 
-
+// Змінна теми
 let lastScrollTop = 0;
 const header = document.querySelector("header");
 
@@ -38,3 +39,27 @@ window.addEventListener("scroll", () => {
     header.style.top = "0"; 
   }
 });
+
+ const toggle = document.getElementById('theme-toggle');
+  const body = document.body;
+
+  if (localStorage.getItem('theme') === 'dark') {
+    body.classList.add('dark-theme');
+    toggle.textContent = '☀️';
+  }
+
+  toggle.addEventListener('click', () => {
+    body.classList.toggle('dark-theme');
+    const isDark = body.classList.contains('dark-theme');
+    toggle.textContent = isDark ? '☀️' : '🌙';
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  });
+
+
+// Плавний скрол до секцій
+  function scrollToSection(id) {
+  const section = document.getElementById(id);
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
+}
