@@ -15,7 +15,6 @@
         </div>
         <nav>
             <button onclick="location.href='index.html'">Головна</button>
-            <button onclick="location.href='services.html'">Послуги</button>
             <button onclick="location.href='pricing.html'">Абонементи</button>
             <button id="theme-toggle" class="theme-toggle">🌙</button>
         </nav>
@@ -23,19 +22,58 @@
     <main>
         <section id="pricing">
             <h2>Абонементи</h2>
-            <ul>
-                <li> 1 тренування — 80 грн</li>
-                <li> 8 тренувань (1 місяць) — 470 грн</li>
-                <li> 12 тренувань (1 місяць) — 500 грн</li>
-                <li> Безлім (1 місяць) — 530 грн</li>
-            </ul>
+            <h3>Зал пропонує різні варіанти абонементів:</h3>
+            <div class="plan-container">
+                <div class="plan one-time-training">
+                    <div>
+                        <h3>Разове тренування</h3>
+                    </div>
+                    <div>
+                        <p>ціна:</p>
+                        <p class="price">80 грн</p>
+                    </div>
+                </div>
+
+                <div class="plan workouts-8">
+                    <div>
+                        <h3>8 тренувань</h3>
+                        <p>1 місяць</p>
+                    </div>
+                    <div>
+                        <p>ціна:</p>
+                        <p class="price">450 грн</p>
+                    </div>
+                </div>
+
+                <div class="plan workouts-12">
+                    <div>
+                        <h3>12 тренувань</h3>
+                        <p>1 місяць</p>
+                    </div>
+                    <div>
+                        <p>ціна:</p>
+                        <p class="price">500 грн</p>
+                    </div>
+                </div>
+
+                <div class="plan unlimited">
+                    <div>
+                        <h3>Безліміт</h3>
+                        <p>1 місяць</p>
+                    </div>
+                    <div>
+                        <p>ціна:</p>
+                        <p class="price">530 грн</p>
+                    </div>
+                </div>
+            </div>
         </section>
+
     </main>
     <div class="wrapper"></div>
         <footer>
             <p>© 2025 Gladiator Gym. Всі права захищено.</p>
         </footer>
-    </div>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
